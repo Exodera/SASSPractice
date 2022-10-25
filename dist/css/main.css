@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: purple;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  border: 1px dotted steelblue;
+  margin: 10px;
+}
+.card button {
+  color: red;
+}
+.card button:hover {
+  background: steelblue;
+}
+
+.my-list, .some-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.my-list div, .some-list div {
+  margin: 10px;
+}
+
+.other-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.other-list div {
+  margin: 10px;
+}
+
+.some-list {
+  color: red;
+}/*# sourceMappingURL=main.css.map */

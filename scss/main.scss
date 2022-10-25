@@ -1,0 +1,48 @@
+@import '../styles/vars.scss';
+@import '../styles/global.scss';
+@import '../styles/mixins.scss';
+
+
+body{
+    background-color: $prime;
+    
+}
+
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    border: 1px dotted $textColor;
+    margin: 10px;
+
+
+    button{
+        color: red;
+        &:hover{
+            background: $textColor;
+        }
+    }
+    
+}
+
+.my-list{
+    @include flexCenter(row);
+    
+    div{
+        margin: 10px;
+    }
+}
+
+.other-list{
+    @include flexCenter(column);
+    div{
+        margin: 10px;
+    }
+}
+
+.some-list{
+    @extend .my-list;
+    color: red
+}
+
+
